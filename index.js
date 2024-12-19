@@ -11,6 +11,10 @@ connectDB();
 
 app.use("/api", imageRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
+
 const PORT = 8000;
 
 app.listen(PORT, () => {
